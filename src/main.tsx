@@ -10,7 +10,7 @@ import Layout, { Menus } from './layouts';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path={import.meta.env.BASE_URL} element={<Layout />}>
         <Route
           index
           element={React.createElement(Menus?.[0]?.component)}
