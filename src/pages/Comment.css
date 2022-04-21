@@ -1,0 +1,30 @@
+.Comment {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  border: 1px solid #eee;
+  margin: 45vh 0;
+}
+.UserInfo {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+.Comment-text {
+  max-width: 50%;
+  align-self: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.Comment-date {
+  align-self: flex-end;
+  font-size: 14px;
+}
+.Avatar {
+  height: 24px;
+}
