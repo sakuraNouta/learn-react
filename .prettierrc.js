@@ -3,5 +3,6 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'none',
   htmlWhitespaceSensitivity: 'ignore',
-  endOfLine: 'auto'
+  endOfLine: 'auto',
+  arrowParens: 'avoid'
 };
