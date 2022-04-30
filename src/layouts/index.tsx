@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-use';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import App from '../pages/App';
 import Calculator from '../pages/Calculator';
@@ -11,6 +10,7 @@ import HelloWorld, { HelloWorldProps } from '../pages/HelloWorld';
 import LoginControl from '../pages/LoginControl';
 import NameForm from '../pages/NameForm';
 import NumberList, { NumberListProps } from '../pages/NumberList';
+import SignUpDialog from '../pages/SignUpDialog';
 
 interface Menu {
   path: string;
@@ -22,7 +22,8 @@ interface Menu {
     | typeof EventButton
     | typeof LoginControl
     | typeof NameForm
-    | typeof Calculator;
+    | typeof Calculator
+    | typeof SignUpDialog;
   props?: HelloWorldProps | CommentProps | NumberListProps;
 }
 
@@ -84,6 +85,11 @@ export const Menus: Menu[] = [
     path: 'calculator',
     name: 'Calculator',
     component: Calculator
+  },
+  {
+    path: 'SignUpDialog',
+    name: 'SignUpDialog',
+    component: SignUpDialog
   }
 ];
 
