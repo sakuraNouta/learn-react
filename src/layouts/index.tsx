@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-use';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import App from '../pages/App';
 import Calculator from '../pages/Calculator';

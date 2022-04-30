@@ -1,3 +1,5 @@
+import './SignUpDialog.css';
+
 import * as React from 'react';
 
 function FancyBorder(props: React.PropsWithChildren<{ color: string }>) {
@@ -40,8 +42,14 @@ export default class signUpDialog extends React.Component<
         title="Mars Exploration Program"
         message="How should we refer to you?"
       >
-        <input value={this.state.login} onChange={e => this.handleChange(e)} />
-        <button onClick={() => this.handleSignUp()}>Sign Me Up!</button>
+        <input
+          className="Dialog-Input"
+          value={this.state.login}
+          onChange={e => this.handleChange(e)}
+        />
+        <button className="Dialog-Button" onClick={() => this.handleSignUp()}>
+          Sign Me Up!
+        </button>
       </Dialog>
     );
   }

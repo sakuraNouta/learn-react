@@ -1,0 +1,22 @@
+.FancyBorder {
+  margin: auto;
+  border: 1px solid #eee;
+  text-align: center;
+}
+.FancyBorder-blue {
+  border-color: skyblue;
+}
+
+.Dialog-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Dialog-Input {
+  width: 100%;
+  border: 1px solid #eee;
+}
+.Dialog-Button {
+  margin: 10px 0;
+  border: 1px solid #eee;
+  background-color: aqua;
+}
