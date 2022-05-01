@@ -12,6 +12,8 @@ import FriendStatus, { FriendStatusProps } from '../pages/hook/FriendStatus';
 import LoginControl from '../pages/LoginControl';
 import NameForm from '../pages/NameForm';
 import NumberList, { NumberListProps } from '../pages/NumberList';
+import ReduxExample from '../pages/redux/Example';
+import TodoList from '../pages/redux/TodoList';
 import SignUpDialog from '../pages/SignUpDialog';
 
 interface Menu {
@@ -103,6 +105,16 @@ export const Menus: Menu[] = [
     name: 'FriendStatus',
     component: FriendStatus,
     props: { friend: { id: 1 } }
+  },
+  {
+    path: 'redux/example',
+    name: 'ReduxExample',
+    component: ReduxExample
+  },
+  {
+    path: 'redux/TodoList',
+    name: 'TodoList',
+    component: TodoList
   }
 ];
 
