@@ -7,6 +7,8 @@ import Clock from '../pages/Clock';
 import Comment, { CommentProps } from '../pages/Comment';
 import EventButton from '../pages/EventButton';
 import HelloWorld, { HelloWorldProps } from '../pages/HelloWorld';
+import HookExample from '../pages/hook/Example';
+import FriendStatus, { FriendStatusProps } from '../pages/hook/FriendStatus';
 import LoginControl from '../pages/LoginControl';
 import NameForm from '../pages/NameForm';
 import NumberList, { NumberListProps } from '../pages/NumberList';
@@ -24,7 +26,7 @@ interface Menu {
     | typeof NameForm
     | typeof Calculator
     | typeof SignUpDialog;
-  props?: HelloWorldProps | CommentProps | NumberListProps;
+  props?: HelloWorldProps | CommentProps | NumberListProps | FriendStatusProps;
 }
 
 export const Menus: Menu[] = [
@@ -87,9 +89,20 @@ export const Menus: Menu[] = [
     component: Calculator
   },
   {
-    path: 'SignUpDialog',
+    path: 'signUpDialog',
     name: 'SignUpDialog',
     component: SignUpDialog
+  },
+  {
+    path: 'hook/example',
+    name: 'HookExample',
+    component: HookExample
+  },
+  {
+    path: 'hook/friend',
+    name: 'FriendStatus',
+    component: FriendStatus,
+    props: { friend: { id: 1 } }
   }
 ];
 
