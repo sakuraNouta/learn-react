@@ -16,11 +16,11 @@
 
 - React 官网
 
-  - [ ] 完成`React Main Concepts` [React Main Concepts](https://reactjs.org/docs/hello-world.html)
+  - [x] 完成`React Main Concepts` [React Main Concepts](https://reactjs.org/docs/hello-world.html)
 
-  - [ ] `React HOOK` [React Hook](https://zh-hans.reactjs.org/docs/hooks-intro.html)
+  - [x] `React HOOK` [React Hook](https://zh-hans.reactjs.org/docs/hooks-intro.html)
 
-- [ ] `redux`, `redux-sage`
+- [x] `redux`, `redux-sage`
 
 - [ ] 考虑重构为`monorepo` + `lerna`项目
 

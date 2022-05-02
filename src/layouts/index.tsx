@@ -7,9 +7,15 @@ import Clock from '../pages/Clock';
 import Comment, { CommentProps } from '../pages/Comment';
 import EventButton from '../pages/EventButton';
 import HelloWorld, { HelloWorldProps } from '../pages/HelloWorld';
+import HookExample from '../pages/hook/Example';
+import FriendStatus, { FriendStatusProps } from '../pages/hook/FriendStatus';
 import LoginControl from '../pages/LoginControl';
 import NameForm from '../pages/NameForm';
 import NumberList, { NumberListProps } from '../pages/NumberList';
+import ReduxExample from '../pages/redux/Example';
+import TodoList from '../pages/redux/TodoList';
+import SagaCounter from '../pages/saga/Counter';
+import SagaHello from '../pages/saga/Hello';
 import SignUpDialog from '../pages/SignUpDialog';
 
 interface Menu {
@@ -24,7 +30,7 @@ interface Menu {
     | typeof NameForm
     | typeof Calculator
     | typeof SignUpDialog;
-  props?: HelloWorldProps | CommentProps | NumberListProps;
+  props?: HelloWorldProps | CommentProps | NumberListProps | FriendStatusProps;
 }
 
 export const Menus: Menu[] = [
@@ -87,9 +93,40 @@ export const Menus: Menu[] = [
     component: Calculator
   },
   {
-    path: 'SignUpDialog',
+    path: 'signUpDialog',
     name: 'SignUpDialog',
     component: SignUpDialog
+  },
+  {
+    path: 'hook/example',
+    name: 'HookExample',
+    component: HookExample
+  },
+  {
+    path: 'hook/friend',
+    name: 'FriendStatus',
+    component: FriendStatus,
+    props: { friend: { id: 1 } }
+  },
+  {
+    path: 'redux/example',
+    name: 'ReduxExample',
+    component: ReduxExample
+  },
+  {
+    path: 'redux/TodoList',
+    name: 'TodoList',
+    component: TodoList
+  },
+  {
+    path: 'saga/Hello',
+    name: 'SagaHello',
+    component: SagaHello
+  },
+  {
+    path: 'saga/Counter',
+    name: 'SagaCounter',
+    component: SagaCounter
   }
 ];
 
