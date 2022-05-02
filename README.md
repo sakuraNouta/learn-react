@@ -20,7 +20,7 @@
 
   - [x] `React HOOK` [React Hook](https://zh-hans.reactjs.org/docs/hooks-intro.html)
 
-- [ ] `redux`, `redux-sage`
+- [x] `redux`, `redux-sage`
 
 - [ ] 考虑重构为`monorepo` + `lerna`项目
 
