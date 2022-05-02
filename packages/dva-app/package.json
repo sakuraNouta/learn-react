@@ -27,7 +27,7 @@
   "description": "> TODO: description",
   "version": "0.0.0",
   "author": "sakuraNouta <urbo0403@163.com>",
-  "homepage": "https://github.com/sakuraNouta/vite-react-ts-app/tree/master/packages/dva-app#readme",
+  "homepage": "https://github.com/sakuraNouta/learn-react/tree/master/packages/dva-app#readme",
   "license": "ISC",
   "main": "lib/dva-app.js",
   "directories": {
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sakuraNouta/vite-react-ts-app.git"
+    "url": "git+https://github.com/sakuraNouta/learn-react.git"
   },
   "bugs": {
-    "url": "https://github.com/sakuraNouta/vite-react-ts-app/issues"
+    "url": "https://github.com/sakuraNouta/learn-react/issues"
   }
 }

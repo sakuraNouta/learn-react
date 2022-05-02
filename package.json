@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sakuraNouta/vite-react-ts-app.git"
+    "url": "git+https://github.com/sakuraNouta/learn-react.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sakuraNouta/vite-react-ts-app/issues"
+    "url": "https://github.com/sakuraNouta/learn-react/issues"
   },
-  "homepage": "https://github.com/sakuraNouta/vite-react-ts-app#readme"
+  "homepage": "https://github.com/sakuraNouta/learn-react#readme"
 }
