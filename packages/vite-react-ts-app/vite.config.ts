@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react(), WindiCSS()],
   base: '/learn-react/',
   build: {
-    outDir: 'docs'
+    outDir: '../../docs'
   }
 });
