@@ -1,40 +1,26 @@
 {
-  "name": "vite-react-ts-app",
+  "name": "learn-react",
   "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint:fix": "eslint ./ --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
-    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" "
-  },
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-redux": "^8.0.1",
-    "react-router-dom": "^6.3.0",
-    "redux": "^4.2.0",
-    "redux-devtools": "^3.7.0",
-    "redux-saga": "^1.1.3"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
-    "@vitejs/plugin-react": "^1.3.0",
-    "dayjs": "^1.11.1",
-    "eslint": "^8.13.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.2",
-    "vite-plugin-windicss": "^1.8.4",
-    "windicss": "^3.5.1"
-  }
+    "lerna": "^3.22.1"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "start:dva": "lerna run --stream --scope dva-app start",
+    "start:vite": "lerna run --stream --scope vite-react-ts-app start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakuraNouta/vite-react-ts-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakuraNouta/vite-react-ts-app/issues"
+  },
+  "homepage": "https://github.com/sakuraNouta/vite-react-ts-app#readme"
 }
