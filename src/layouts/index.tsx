@@ -14,6 +14,8 @@ import NameForm from '../pages/NameForm';
 import NumberList, { NumberListProps } from '../pages/NumberList';
 import ReduxExample from '../pages/redux/Example';
 import TodoList from '../pages/redux/TodoList';
+import SagaCounter from '../pages/saga/Counter';
+import SagaHello from '../pages/saga/Hello';
 import SignUpDialog from '../pages/SignUpDialog';
 
 interface Menu {
@@ -115,6 +117,16 @@ export const Menus: Menu[] = [
     path: 'redux/TodoList',
     name: 'TodoList',
     component: TodoList
+  },
+  {
+    path: 'saga/Hello',
+    name: 'SagaHello',
+    component: SagaHello
+  },
+  {
+    path: 'saga/Counter',
+    name: 'SagaCounter',
+    component: SagaCounter
   }
 ];
 
