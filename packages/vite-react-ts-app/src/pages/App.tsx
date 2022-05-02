@@ -38,6 +38,15 @@ function App() {
           >
             Vite Docs
           </a>
+          {' | '}
+          <a
+            className="App-link"
+            href="./dva/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dva App
+          </a>
         </p>
       </header>
     </div>

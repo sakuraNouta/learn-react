@@ -11,7 +11,10 @@
   "scripts": {
     "start": "lerna run --parallel start",
     "start:dva": "lerna run --stream --scope dva-app start",
-    "start:vite": "lerna run --stream --scope vite-react-ts-app start"
+    "start:vite": "lerna run --stream --scope vite-react-ts-app start",
+    "build": "lerna run --parallel build",
+    "build:dva": "lerna run --stream --scope dva-app build",
+    "build:vite": "lerna run --stream --scope vite-react-ts-app build"
   },
   "repository": {
     "type": "git",
