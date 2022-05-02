@@ -27,5 +27,3 @@
 - [ ] `DvaJs` [DvaJs](https://dvajs.com/)
 
 - [ ] `Ant Design` [Ant Design](https://ant.design/index-cn)
-
-- [ ] Webpack5 模块联邦微前端
