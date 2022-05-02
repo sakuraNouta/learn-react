@@ -10,7 +10,7 @@ class Clock extends React.Component<any, { time: string; times: number }> {
     this.state = { time: getCurrentTime(), times: 0 };
   }
   componentDidMount() {
-    this.timerId = setInterval(() => this.tick(), 1000);
+    this.timerId = window.setInterval(() => this.tick(), 1000);
   }
   componentWillUnmount() {
     clearInterval(this.timerId);
