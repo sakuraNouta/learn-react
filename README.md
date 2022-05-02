@@ -22,6 +22,6 @@
 
 - [x] `redux`, `redux-sage`
 
-- [ ] 考虑重构为`monorepo` + `lerna`项目
+- [x] 重构为`monorepo` + `lerna`项目
 
 - [ ] `DvaJs` [DvaJs](https://dvajs.com/)
