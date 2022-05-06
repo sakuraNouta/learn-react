@@ -1,5 +1,8 @@
 # Leanding React
 
+安装依赖: `lerna bootstrap`
+
+
 ## Roadmap
 
 - [x] 构建`vite + react + typescript`项目
@@ -24,6 +27,6 @@
 
 - [x] 重构为`monorepo` + `lerna`项目
 
-- [ ] `DvaJs` [DvaJs](https://dvajs.com/)
+- [x] `DvaJs` [DvaJs](https://dvajs.com/)
 
-- [ ] `Ant Design` [Ant Design](https://ant.design/index-cn)
+- [x] `Ant Design` [Ant Design](https://ant.design/index-cn)
