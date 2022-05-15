@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
+import RefDom from '../pages/advanced/RefDom';
 import App from '../pages/App';
 import Calculator from '../pages/Calculator';
 import Clock from '../pages/Clock';
@@ -127,6 +128,11 @@ export const Menus: Menu[] = [
     path: 'saga/Counter',
     name: 'SagaCounter',
     component: SagaCounter
+  },
+  {
+    path: 'advance/RefDom',
+    name: 'RefDom',
+    component: RefDom
   }
 ];
 
