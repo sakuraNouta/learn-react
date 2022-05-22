@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
+import JSXInDepth from '../pages/advanced/JSXInDepth';
+import Portals from '../pages/advanced/Portals';
 import RefDom from '../pages/advanced/RefDom';
 import App from '../pages/App';
 import Calculator from '../pages/Calculator';
@@ -133,6 +135,16 @@ export const Menus: Menu[] = [
     path: 'advance/RefDom',
     name: 'RefDom',
     component: RefDom
+  },
+  {
+    path: 'advance/JSXInDepth',
+    name: 'JSXInDepth',
+    component: JSXInDepth
+  },
+  {
+    path: 'advance/Portals',
+    name: 'Portals',
+    component: Portals
   }
 ];
 
@@ -147,7 +159,7 @@ export default function Layout() {
 
   return (
     <div className="flex w-screen h-screen">
-      <ul className="w-1/5 h-full px-8 bg-light-400">
+      <ul className="w-1/5 h-full px-8 bg-light-400 overflow-auto">
         <li className="text-xl py-8">Vite-React-Ts-App</li>
         {Menus.map(menu => (
           <li
