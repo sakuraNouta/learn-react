@@ -10,6 +10,7 @@ import Clock from '../pages/Clock';
 import Comment, { CommentProps } from '../pages/Comment';
 import EventButton from '../pages/EventButton';
 import HelloWorld, { HelloWorldProps } from '../pages/HelloWorld';
+import DemoMemorizedFn from '../pages/hook/DemoMemorizedFn';
 import HookExample from '../pages/hook/Example';
 import FriendStatus, { FriendStatusProps } from '../pages/hook/FriendStatus';
 import LoginControl from '../pages/LoginControl';
@@ -145,6 +146,11 @@ export const Menus: Menu[] = [
     path: 'advance/Portals',
     name: 'Portals',
     component: Portals
+  },
+  {
+    path: 'hook/DemoMemorizedFn',
+    name: 'DemoMemorizedFn',
+    component: DemoMemorizedFn
   }
 ];
 
