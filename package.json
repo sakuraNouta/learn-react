@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/sakuraNouta/learn-react/issues"
   },
-  "homepage": "https://github.com/sakuraNouta/learn-react#readme"
+  "homepage": "https://github.com/sakuraNouta/learn-react#readme",
+  "dependencies": {
+    "ahooks": "^3.7.0"
+  }
 }

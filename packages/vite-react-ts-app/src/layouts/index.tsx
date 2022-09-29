@@ -18,6 +18,8 @@ import NameForm from '../pages/NameForm';
 import NumberList, { NumberListProps } from '../pages/NumberList';
 import ReduxExample from '../pages/redux/Example';
 import TodoList from '../pages/redux/TodoList';
+import { RerenderDemo } from '../pages/render/RerenderDemo';
+import { RouterPathText } from '../pages/RouterPathText';
 import SagaCounter from '../pages/saga/Counter';
 import SagaHello from '../pages/saga/Hello';
 import SignUpDialog from '../pages/SignUpDialog';
@@ -151,6 +153,16 @@ export const Menus: Menu[] = [
     path: 'hook/DemoMemorizedFn',
     name: 'DemoMemorizedFn',
     component: DemoMemorizedFn
+  },
+  {
+    path: 'router/:scope/:source',
+    name: '路由路径参数测试',
+    component: RouterPathText
+  },
+  {
+    path: 'render/rerender-demo',
+    name: 'rerender测试',
+    component: RerenderDemo
   }
 ];
 
