@@ -55,6 +55,11 @@
         path: 'virtual-cascader',
         component: './Demo/VirtualCascader',
       },
+      {
+        name: 'PreviousCount',
+        path: 'previous-count',
+        component: './Demo/PreviousCount',
+      },
     ],
   },
   {
