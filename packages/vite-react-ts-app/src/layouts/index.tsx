@@ -8,6 +8,7 @@ import App from '../pages/App';
 import Calculator from '../pages/Calculator';
 import Clock from '../pages/Clock';
 import Comment, { CommentProps } from '../pages/Comment';
+import DraculaUI from '../pages/dracula-ui';
 import EventButton from '../pages/EventButton';
 import HelloWorld, { HelloWorldProps } from '../pages/HelloWorld';
 import DemoMemorizedFn from '../pages/hook/DemoMemorizedFn';
@@ -163,6 +164,11 @@ export const Menus: Menu[] = [
     path: 'render/rerender-demo',
     name: 'rerender测试',
     component: RerenderDemo
+  },
+  {
+    path: 'dracula-ui/hello',
+    name: 'Dracula-UI',
+    component: DraculaUI
   }
 ];
 
