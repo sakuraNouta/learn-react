@@ -2,6 +2,12 @@ import { useIntl } from '@umijs/max';
 import { Button, message, notification } from 'antd';
 import defaultSettings from '../config/defaultSettings';
 
+import type { AttributifyAttributes } from 'unocss/dist/preset-attributify';
+
+declare module 'react' {
+  interface HTMLAttributes<T> extends AttributifyAttributes {}
+}
+
 const { pwa } = defaultSettings;
 const isHttps = document.location.protocol === 'https:';
 

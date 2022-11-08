@@ -60,6 +60,16 @@
         path: 'previous-count',
         component: './Demo/PreviousCount',
       },
+      {
+        name: '滚动提示模态框',
+        path: 'scroll-top-modal',
+        component: './Demo/ScrollTipModal',
+      },
+      {
+        name: 'transition',
+        path: 'transition',
+        component: './Demo/TransitionDemo'
+      }
     ],
   },
   {
