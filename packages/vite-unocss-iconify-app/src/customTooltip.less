@@ -1,0 +1,40 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes neon {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.custom-tooltip {
+  display: inline-flex;
+  align-items: center;
+  width: 36px;
+  transition: width 1s;
+  &:hover {
+    width: 160px;
+    color: red;
+    animation: neon 1s linear infinite;
+  }
+  &:hover&:after {
+    margin-left: 12px;
+    content: attr(tooltip);
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+    animation: fadeIn 600ms linear forwards;
+  }
+}
